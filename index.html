@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3061cfd0c7.js" crossorigin="anonymous"></script>
+    <title>Text Editor</title>
+
+</head>
+
+<body>
+    <main class="bg-sky-300 w-9/12 mx-auto my-5  py-5 h-screen">
+        <section>
+            <h1 class="text-3xl text-center font-semibold">Text Editor</h1>
+        </section>
+        <div class="border border-black bg-sky-200 p-2  w-8/12 mx-auto mb-5 mt-5">
+            <section class=" px-5 py-2 flex justify-between">
+                <div class="">
+                    <button id="bold-btn" class="focus:bg-sky-700"><i class="fa-solid fa-bold p-1"></i></button>
+                    <button id="italic-btn" class="focus:bg-sky-700"><i class="fa-solid fa-italic p-2"></i></button>
+                    <button id="underline-btn" class="focus:bg-sky-700"><i class="fa-solid fa-underline"></i></button>
+                </div>
+                <div>
+                    <button id="left-btn" class="focus:bg-sky-700"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="center-btn" class="focus:bg-sky-700"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="right-btn" class="focus:bg-sky-700"><i class="fa-solid fa-align-right"></i></button>
+                    <button id="justify-btn" class="focus:bg-sky-700"><i class="fa-solid fa-align-justify"></i></button>
+                </div>
+                <div class="flex gap-2">
+                    <input type="number" name="" id="font-size" class="w-10" value="16">
+                    <input type="color" name="" id="color-picker">
+                </div>
+            </section>
+
+            <section class="h-100vh">
+                <textarea name="" id="text-field" cols="95 " rows="20"
+                    class="block mx-auto p-2 w-11/12 h-fit"></textarea>
+            </section>
+        </div>
+    </main>
+    <script src="js/text-editor.js"></script>
+</body>
+
+</html>
